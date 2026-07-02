@@ -47,6 +47,39 @@ outline: deep
 
 通过查询参数 `z` 指定句子长度。`?z=20` 表示获取长度不超过 20 的句子；`?z=10,20` 表示获取长度在 10 到 20 之间的句子。有效长度范围为 10 到 100，超出范围或格式无效时会忽略 `z`。
 
+## TypeScript 类型定义
+
+```ts
+type HitokotoCategory =
+  | 'a' // 动画
+  | 'b' // 漫画
+  | 'c' // 游戏
+  | 'd' // 文学
+  | 'e' // 原创
+  | 'f' // 来自网络
+  | 'g' // 其他
+  | 'h' // 影视
+  | 'i' // 诗词
+  | 'j' // 网易云
+  | 'k' // 哲学
+  | 'l' // 抖机灵
+
+interface HitokotoQuery {
+  c?: HitokotoCategory | string
+  z?: `${number}` | `${number},${number}`
+}
+
+interface HitokotoResponse {
+  id?: number
+  hitokoto: string
+  type?: HitokotoCategory // 可改成 string
+  from?: string
+  from_who?: string
+  length?: number
+  created_at?: number
+}
+```
+
 ## 使用方法
 
 1. `html`中定义一个装句子的`div`
