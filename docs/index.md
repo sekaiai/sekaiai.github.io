@@ -67,11 +67,13 @@ async function fetchHitokoto() {
 
 onMounted(() => {
   fetchHitokoto()
+  document.body.classList.add('home-index-page')
   document.body.style.backgroundImage = "url('./73575222_p0.webp')"
 })
 
 onUnmounted(() => {
   clearTimeout(timer)
+  document.body.classList.remove('home-index-page')
   document.body.style.backgroundImage = 'none'
 })
 </script>
@@ -379,5 +381,9 @@ onUnmounted(() => {
     padding-left: 14px;
     font-size: 12px;
   }
+}
+
+:global(body.home-index-page .VPNav .divider) {
+  display: none;
 }
 </style>
