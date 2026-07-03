@@ -4,6 +4,16 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: '雪阳哦',
   description: '免费句子接口API，一言指的就是一句话，可以是动漫中的台词，也可以是网络上的各种小段子。',
+  sitemap: {
+    hostname: 'https://sekaiai.github.io'
+  },
+  head: [
+    ['meta', { name: 'author', content: '雪阳哦' }],
+    ['meta', { property: 'og:site_name', content: '雪阳哦' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:locale', content: 'zh_CN' }],
+    ['meta', { name: 'theme-color', content: '#ffffff' }]
+  ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
