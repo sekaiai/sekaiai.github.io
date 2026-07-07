@@ -2,18 +2,18 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 title: 雪阳哦
-titleTemplate: 雪阳哦 - 一言句子接口与个人项目
-description: 雪阳哦的个人项目主页，提供免费一言句子接口 API、动漫台词与短句随机获取服务，以及相关工具文档。
+titleTemplate: 雪阳哦 - 一言随机句子接口与个人项目
+description: 雪阳哦的个人项目主页，提供免费一言随机句子接口 API、随机动漫台词、文学短句、原创句子获取服务，以及个人工具项目文档。
 head:
   - - meta
     - name: keywords
-      content: 一言,一言 API,句子接口,Hitokoto,动漫台词,免费 API,雪阳哦
+      content: 雪阳哦,一言 API,随机句子接口,Hitokoto,动漫台词,文学短句,免费 API,个人项目
   - - meta
     - property: og:title
-      content: 雪阳哦 - 一言句子接口与个人项目
+      content: 雪阳哦 - 一言随机句子接口与个人项目
   - - meta
     - property: og:description
-      content: 免费一言句子接口 API，随机返回动漫台词、文学短句、原创句子等内容，也收录雪阳哦的个人项目文档。
+      content: 免费一言随机句子接口 API，随机返回动漫台词、文学短句、原创句子等内容，也收录雪阳哦的个人工具项目文档。
   - - meta
     - property: og:url
       content: https://sekaiai.github.io/
@@ -22,10 +22,10 @@ head:
       content: summary
   - - meta
     - name: twitter:title
-      content: 雪阳哦 - 一言句子接口与个人项目
+      content: 雪阳哦 - 一言随机句子接口与个人项目
   - - meta
     - name: twitter:description
-      content: 免费一言句子接口 API，随机返回动漫台词、文学短句、原创句子等内容。
+      content: 免费一言随机句子接口 API，随机返回动漫台词、文学短句、原创句子，也整理个人项目文档。
   - - link
     - rel: canonical
       href: https://sekaiai.github.io/
@@ -100,33 +100,33 @@ onUnmounted(() => {
   <div :class='$style.contentIntro'>
     <p :class='$style.eyebrow'>Hitokoto API / Personal Works</p>
     <div id="home-content-title" :class='$style.sectionTitle'>雪阳哦</div>
-    <p :class='$style.summary'>一言句子接口 API 与个人项目文档</p>
+    <p :class='$style.summary'>免费一言随机句子接口 API 与个人项目文档</p>
     <p :class='$style.description'>
-      这里是雪阳哦的个人项目主页。主要维护一个可以直接调用的一言句子接口，
-      用来随机获取动漫台词、漫画对白、文学短句、原创句子和来自网络的小段子。
+      这里是雪阳哦的个人项目主页。主要维护一个可以直接调用的随机句子接口，
+      用来获取动漫台词、漫画对白、文学短句、原创句子和来自网络的小段子。
     </p>
   </div>
 
   <div :class='$style.featureGrid'>
     <a :class='$style.featureCard' href="/guide/hitokoto">
       <span :class='$style.cardKicker'>API</span>
-      <strong>一言句子接口</strong>
-      <span>查看请求参数、分类说明、返回格式和浏览器调用示例。</span>
+      <strong>一言随机句子接口</strong>
+      <span>查看免费一言 API 的请求参数、分类说明、返回格式和调用示例。</span>
     </a>
     <a :class='$style.featureCard' href="https://hi.logacg.com" rel="noopener noreferrer" target="_blank">
       <span :class='$style.cardKicker'>Live</span>
       <strong>接口在线预览</strong>
-      <span>打开接口地址，直接获取一条随机句子。</span>
+      <span>打开接口地址，直接获取一条随机动漫台词或短句。</span>
     </a>
     <a :class='$style.featureCard' href="/guide/zip-manage">
       <span :class='$style.cardKicker'>Tool</span>
       <strong>漫画图片压缩优化</strong>
-      <span>整理和压缩漫画图片的小工具记录。</span>
+      <span>批量压缩漫画图片，减少体积，让手机阅读更顺滑。</span>
     </a>
     <a :class='$style.featureCard' href="/guide/reminder">
       <span :class='$style.cardKicker'>Mini App</span>
       <strong>提醒事项小程序</strong>
-      <span>支持农历提醒的个人小程序项目说明。</span>
+      <span>支持农历生日、纪念日和周期事项提醒的小程序说明。</span>
     </a>
   </div>
 </section>
