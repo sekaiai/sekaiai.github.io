@@ -1,46 +1,60 @@
 ---
 layout: doc
-title: ExHentai 批量下载插件
+title: ExHentai 批量下载 Chrome 插件
 outline: deep
+description: ExHentai 批量下载 Chrome 插件说明，支持批量下载种子或图片、滚动自动加载、分页处理和下载间隔控制。
+head:
+  - - meta
+    - name: keywords
+      content: ExHentai 插件,ExHentai 批量下载,Chrome 扩展,种子下载,图片下载
+  - - meta
+    - property: og:title
+      content: ExHentai 批量下载 Chrome 插件
+  - - meta
+    - property: og:description
+      content: ExHentai 批量下载 Chrome 插件说明，支持批量下载种子或图片、自动加载和分页处理。
 ---
 
-# ExHentai 批量下载插件
+# ExHentai 批量下载 Chrome 插件
 
-作为老司机，一个本子都不好意思看，于是就只能上批量啦~
+这是一个用于 ExHentai 的 Chrome 扩展，主要解决批量下载种子或图片时重复点击、反复翻页的麻烦。作为老司机，一个一个点当然不好意思，于是就只能上批量啦~
 
 
 ## 插件特点
 
 - **批量下载**：一键获取页面内所有种子文件或图片，自动分页获取下一页种子，直到最后一页。
 - **自动加载**：滚动到页面底部时自动加载下一页内容。
-- **下载间隔**：每次下载都会有一秒的间隔，你好我好大家好。
+- **下载间隔**：每次下载都会有 1 秒间隔，你好我好大家好。
 - **强制停止**：一旦开始下载，插件会持续执行任务，直到完成，若要停止，请刷新或关闭页面。
 
 ## 安装指南
 
-从chrome插件市场下载插件，或者直接下载插件压缩包，解压后拖入chrome扩展程序页面即可。
+可以从 Chrome 插件市场安装，也可以下载插件压缩包，解压后拖入 Chrome 扩展程序页面。
 
 https://chromewebstore.google.com/detail/chrome-exhentai-help/dpnkmdlkpcgckdjolnddjgnahcagjlmd?authuser=0&hl=zh-CN
 
 
 ### 自己编译安装
 
-### 1. 通过GitHub源码
+### 1. 通过 GitHub 源码
 
-编译环境要求：Node.js
+编译环境要求：Node.js。
+
 1. 编译打包
-```
+
+```bash
 git clone git@github.com:sekaiai/chrome-exhentai-help.git
 
 # 打开项目目录
 cd chrome-exhentai-help
 
-# 安转依赖
+# 安装依赖
 pnpm install //npm install
 
 # 编译
 npm run build
 ```
+
 2. 打开 Chrome 浏览器，进入扩展程序页面 (`chrome://extensions/`)。
 3. 启用“开发者模式”，然后点击“加载已解压的扩展程序”。
 4. 选择项目目录 `/chrome-exhentai-help/dist`，完成安装。
@@ -48,9 +62,9 @@ npm run build
 ### 2. 使用插件
 
 1. 安装完成后，打开 ExHentai 网站。
-2. 支持的页面机会出现`Download All Torrent`或`下载全部种子`的按钮。
-3. 点击后会，插件将自动开始批量下载种子或图片。
-4. 下载过程中，每次任务会间隔一秒进行，确保稳定性。
+2. 支持的页面会出现 `Download All Torrent` 或 `下载全部种子` 按钮。
+3. 点击按钮后，插件会自动开始批量下载种子或图片。
+4. 下载过程中，每次任务会间隔 1 秒进行，尽量保持稳定。
 
 ## 注意事项
 
@@ -64,8 +78,9 @@ npm run build
 
 请确保 ExHentai 页面已经完全加载。如果页面内容还没有加载完毕，插件可能无法识别到所有的图片或种子文件。
 
-### 下载图片变成了xxx_xx.jpg.htm文件？
-用记事本打开该文件，里面有下载失败的原因。
+### 下载图片变成了 xxx_xx.jpg.htm 文件？
+
+用记事本打开该文件，里面通常会写着下载失败的原因。
 
 
 ## 项目地址
