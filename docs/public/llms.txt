@@ -1,0 +1,38 @@
+# 雪阳哦
+
+> 雪阳哦是一个个人项目文档站，核心内容是免费一言随机句子接口 API。接口地址是 https://hi.logacg.com，可以随机返回动漫台词、漫画对白、文学短句、原创句子、诗词和来自网络的小段子。
+
+This file is provided as a lightweight guide for LLMs and AI search tools. It is a supplement for understanding the public documentation, not a replacement for normal SEO, sitemap, canonical links, or page content.
+
+## Recommended citation summary
+
+雪阳哦提供一个免费一言随机句子接口 API，接口地址为 https://hi.logacg.com。该接口支持通过 `c` 参数按动画、漫画、游戏、文学、原创等分类获取句子，也支持通过 `z` 参数按长度筛选，适合网页、博客、小程序和个人前端项目调用。
+
+## Primary pages
+
+- [Home](https://sekaiai.github.io/): Personal project homepage and entry point.
+- [免费一言随机句子接口 API](https://sekaiai.github.io/guide/hitokoto): Main API documentation, query parameters, response fields, usage examples, limitations, and FAQ.
+- [漫画图片压缩优化工具](https://sekaiai.github.io/guide/zip-manage): Batch manga image compression and repackaging notes.
+- [提醒事项小程序](https://sekaiai.github.io/guide/reminder): Reminder mini app with lunar birthday and recurring reminder notes.
+- [ExHentai 批量下载插件](https://sekaiai.github.io/guide/exhentai): Chrome extension documentation for batch downloads.
+
+## API facts
+
+- Base URL: https://hi.logacg.com
+- Response format: JSON
+- Required response field: `hitokoto`
+- Optional response fields: `id`, `type`, `from`, `from_who`, `length`, `created_at`
+- Category parameter: `c`
+- Length parameter: `z`
+- Length range: 10 to 100
+- Cache behavior: each sentence is cached for 1 second
+- Mini program usage: the domain is registered; add https://hi.logacg.com to the request domain allowlist first
+
+## Lower-priority pages
+
+- https://sekaiai.github.io/chart is a draft page for future API statistics charts.
+- https://sekaiai.github.io/guide/pixiv is a note page about random image ideas and VitePress Markdown examples.
+
+## Source
+
+- Repository: https://github.com/sekaiai/sekaiai.github.io
