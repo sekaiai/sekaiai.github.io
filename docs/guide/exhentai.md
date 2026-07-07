@@ -1,24 +1,27 @@
 ---
 layout: doc
-title: ExHentai 批量下载 Chrome 插件
+title: ExHentai 批量下载插件
 outline: deep
-description: ExHentai 批量下载 Chrome 插件说明，支持批量下载种子或图片、滚动自动加载、分页处理和下载间隔控制。
+description: ExHentai 批量下载插件说明，支持批量下载种子或图片、滚动自动加载、分页处理和下载间隔控制。
 head:
   - - meta
     - name: keywords
       content: ExHentai 插件,ExHentai 批量下载,Chrome 扩展,种子下载,图片下载
   - - meta
     - property: og:title
-      content: ExHentai 批量下载 Chrome 插件
+      content: ExHentai 批量下载插件
   - - meta
     - property: og:description
-      content: ExHentai 批量下载 Chrome 插件说明，支持批量下载种子或图片、自动加载和分页处理。
+      content: ExHentai 批量下载插件说明，支持批量下载种子或图片、自动加载和分页处理。
 ---
 
-# ExHentai 批量下载 Chrome 插件
+# ExHentai 批量下载插件
 
-这是一个用于 ExHentai 的 Chrome 扩展，主要解决批量下载种子或图片时重复点击、反复翻页的麻烦。作为老司机，一个一个点当然不好意思，于是就只能上批量啦~
+这是一个用于 ExHentai/ex-hentai 的 Chrome 扩展，主要解决批量下载种子或图片时重复点击、反复翻页的麻烦。作为老司机，一个一个点当然不好意思，于是就只能上批量啦~
 
+## 快速答案
+
+ExHentai 批量下载插件用于一键下载页面里的种子或图片，并自动处理翻页和滚动加载。它适合需要批量保存内容、但又不想一个个手动点击的人；下载开始后没有暂停功能，想停就刷新或关页面。
 
 ## 插件特点
 
