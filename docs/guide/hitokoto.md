@@ -19,7 +19,7 @@ head:
 
 这是一个可以直接调用的免费随机句子接口 API。每次请求随机返回一条句子，内容包括动漫台词、漫画对白、游戏文本、文学短句、原创句子、诗词和来自网络的小段子。
 
-一开始只是很喜欢漂亮句子，后来发现了 [hitokoto](https://github.com/hitokoto-osc) 项目。有点丢脸 hitokoto 的源码我有点看不懂，不过 hitokoto 的句子库也是[开源](https://github.com/hitokoto-osc/sentences-bundle)的，于是我自己写了一个，方便网页和小程序直接用。
+一开始只是很喜欢漂亮句子，后来发现了 [hitokoto](https://github.com/hitokoto-osc) 项目。我尝试自行部署，有点丢脸 hitokoto 的源码我有点看不懂，不过 hitokoto 的句子库也是[开源](https://github.com/hitokoto-osc/sentences-bundle)的，于是我自己写了一个，方便网页和小程序直接用。
 
 
 ## 预览
